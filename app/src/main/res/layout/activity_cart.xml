@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.CartActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/background_back"
+                android:src="@drawable/ic_back"
+                android:tint="@color/purpel"
+                app:layout_constraintEnd_toStartOf="@id/title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Cart"
+                android:textColor="@color/purpel"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textSize="25dp"
+                app:layout_constraintStart_toEndOf="@id/back"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:background="@drawable/background_but_now"
+            android:text="Total Price is 90 EGP"
+            android:fontFamily="@font/ubuntu_bold"
+            android:textColor="@color/purpel"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:layout_margin="7dp"
+            app:layout_constraintTop_toBottomOf="@id/orders_rv"
+            app:layout_constraintBottom_toTopOf="@id/buy_now"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias=".99"
+            />
+
+        <Button
+            android:id="@+id/buy_now"
+            android:layout_width="300dp"
+            android:layout_height="33dp"
+            android:background="@drawable/background_but_now"
+            android:text="Buy Now!"
+            android:fontFamily="@font/ubuntu_bold"
+            android:textColor="@color/purpel"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintTop_toBottomOf="@id/total_price"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias=".99"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/orders_rv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/total_price"
+            app:layout_constraintTop_toBottomOf="@id/action_bar"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

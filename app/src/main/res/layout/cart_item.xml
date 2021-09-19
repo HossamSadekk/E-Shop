@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+    </data>
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="176dp"
+        android:layout_width="match_parent"
+        android:layout_margin="2dp"
+        app:cardCornerRadius="8dp"
+        android:elevation="7dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/purpel">
+
+            <TextView
+                android:id="@+id/current_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="Current Date:"
+                android:layout_margin="8dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/current_date_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_margin="8dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/current_date"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/current_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="Current Time:"
+                android:layout_margin="8dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/current_date"/>
+
+            <TextView
+                android:id="@+id/current_time_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_margin="8dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/current_time"
+                app:layout_constraintTop_toBottomOf="@id/current_date"/>
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="Product Name:"
+                android:layout_margin="8dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/current_time"/>
+
+            <TextView
+                android:id="@+id/product_name_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_margin="8dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/product_name"
+                app:layout_constraintTop_toBottomOf="@id/current_time"/>
+
+            <TextView
+                android:id="@+id/product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="Product Price:"
+                android:layout_margin="8dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/product_name"/>
+
+            <TextView
+                android:id="@+id/product_price_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_margin="8dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/product_price"
+                app:layout_constraintTop_toBottomOf="@id/product_name"/>
+
+            <TextView
+                android:id="@+id/total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="Total Price:"
+                android:layout_margin="8dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/product_price"/>
+
+            <TextView
+                android:id="@+id/total_price_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_margin="8dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/total_price"
+                app:layout_constraintTop_toBottomOf="@id/product_price"/>
+
+            <TextView
+                android:id="@+id/total_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="Total Quantity:"
+                android:layout_margin="8dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/total_price"/>
+
+            <TextView
+                android:id="@+id/total_quantity_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_margin="8dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/total_quantity"
+                app:layout_constraintTop_toBottomOf="@id/total_price"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

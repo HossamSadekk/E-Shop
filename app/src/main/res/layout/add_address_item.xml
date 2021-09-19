@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#AA88F4"
+        android:padding="8dp"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/address_txt"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Cairo,Haram"
+            android:textSize="16dp"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:fontFamily="@font/ubuntu_bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <RadioButton
+            android:id="@+id/selected_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
