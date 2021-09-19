@@ -19,6 +19,10 @@ Building E Commerce App Using Firebase As a Backend
 
 <img src="https://firebasestorage.googleapis.com/v0/b/ecommerce-app-49e6a.appspot.com/o/Screenshot_20210919-154733.png?alt=media&token=c92ead13-7bd8-4129-b53c-2a85c9e0c66d" width="400" height="500">
 
+## Home Screen
+
+<img src="https://firebasestorage.googleapis.com/v0/b/ecommerce-app-49e6a.appspot.com/o/Screenshot_20210919-154826.png?alt=media&token=60a3b6a9-76f3-4377-b66c-8da40693d94e" width="400" height="500">
+
 ## Details Screen
 
 <img src="https://firebasestorage.googleapis.com/v0/b/ecommerce-app-49e6a.appspot.com/o/Screenshot_20210919-155025.png?alt=media&token=7f961211-f33c-4338-89f3-a5a7771efc7a" width="400" height="500">
